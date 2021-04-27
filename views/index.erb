@@ -1,9 +1,27 @@
 <h2>Welcome to PizzaShop!</h2>
+<style type="text/css">.pizza_image {width: 35%; height: 35%}</style>
+<div class="row">
+  <% @products.each do |p| %>
+    <div class="col-md-3">
+      <div>
+        <%= p.title %>
+      </div>
 
-<% @products.each do |p| %>
-  <p>
-    product
-  </p>
-<% end %>
+      <div>
+        <img class="pizza_image" src="<%= p.path_to_image %>">
+      </div>
+
+      <div>
+        <%= p.description %>
+      </div>
+
+      <div>
+        <%= p.price %>
+      </div>
+
+    </div>
+  <% end %>
+</div>
+<br>
 
 <button class="btn btn-primary" onclick="hello()" >Click me</button>
