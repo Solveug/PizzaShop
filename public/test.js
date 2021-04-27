@@ -5,3 +5,8 @@ function hello()
   window.localStorage.setItem('aaa', x)
   alert(x);
 }
+
+function add_to_cart(id)
+{
+  alert('You added pizza with id: ' + id);
+}
