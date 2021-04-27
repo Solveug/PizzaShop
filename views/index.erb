@@ -1,5 +1,5 @@
 <h2>Welcome to PizzaShop!</h2>
-<style type="text/css">.pizza_image {width: 35%; height: 35%}</style>
+<style type="text/css">.pizza_image {width:125px; height: 95px}</style>
 <div class="row">
   <% @products.each do |p| %>
     <div class="col-md-3">
@@ -16,7 +16,11 @@
       </div>
 
       <div>
-        <%= p.price %>
+        Size: <%= p.size %> cm.
+      </div>
+
+      <div>
+        Price: <%= p.price %> rub.
       </div>
 
     </div>
